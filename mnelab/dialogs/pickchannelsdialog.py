@@ -32,6 +32,7 @@ class PickChannelsDialog(QDialog):
     def toggle_buttons(self):
         """Toggle OK button.
         """
+        print("select ")
         selected = [item.data(0) for item in self.channels.selectedItems()]
         if selected != self.initial_selection:
             self.buttonbox.button(QDialogButtonBox.Ok).setEnabled(True)

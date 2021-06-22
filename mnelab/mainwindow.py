@@ -569,6 +569,7 @@ class MainWindow(QMainWindow):
         """Plot data."""
         # self.bad is needed to update history if bad channels are selected in
         # the interactive plot window (see also self.eventFilter)
+        print("111")
         self.bads = self.model.current["data"].info["bads"]
         events = self.model.current["events"]
         nchan = self.model.current["data"].info["nchan"]

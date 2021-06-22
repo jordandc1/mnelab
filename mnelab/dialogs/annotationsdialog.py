@@ -63,6 +63,7 @@ class AnnotationsDialog(QDialog):
             self.remove_button.setEnabled(False)
 
     def add_event(self):
+        print("annotations")
         current_row = self.table.selectedIndexes()[0].row()
         pos = int(self.table.item(current_row, 0).data(Qt.DisplayRole))
         self.table.setSortingEnabled(False)
